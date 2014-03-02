@@ -1,7 +1,6 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -88,4 +87,70 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+}
+.message-box{
+	background: rgba(238, 248, 250, 1);
+	display: flex;
+	flex-direction: row;
+	margin-bottom: .2em;
+    padding: 0.3em;
+   border-radius: 8px;
+}
+.message{
+    padding-left: 10px;
+	flex-grow: 1;
+	font-family: cursive;
+}
+.profile-avtar {
+	display: inline-block;
+	background: url("../images/profile.jpg");
+	background-position:-256px -32px;
+    background-repeat: no-repeat;
+	width: 104px;
+	height: 104px;
+}
+.message-text{
+	font-size: .95em;
+	display: inline;
+    border: none;
+}
+.message-by{
+	font-size: .8em;
+}
+.post-message{
+	display: flex;
+	flex-direction: column;
+}
+.post-message .message-widget{
+	flex-grow: 1;
+}
+.post-message .action .form-control{
+	border: none;
+}
+.messaged-at{
+	margin:0;
+	margin-top:1em;
+	font-size: .8em;
+}
+.input-add-on{
+    display: flex;
+    margin-bottom: 10px;
+	flex-grow: 1;
+}
+.input-add-on .item-title{
+    margin:0;
+    border: 1px solid hsla(31, 15%, 50%, 0.25);
+    padding: .5em .75em;
+    background-color: hsla(31, 15%, 50%, 0.1);
+    color: hsl(0, 0%, 40%);
+    font: inherit;
+    font-weight: 400;
+    outline: none;
+}
+.input-add-on .item-field{
+    outline: none;
+    flex:1;
+    border: 1px solid hsla(31, 15%, 50%, 0.25);
+    padding: .5em .75em;
+    margin:0;
 }
